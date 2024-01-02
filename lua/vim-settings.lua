@@ -10,6 +10,8 @@ vim.cmd("set rnu")
 vim.cmd("set number")
 vim.cmd("set nowrap")
 
+vim.g.mapleader = ' '
+
 vim.keymap.set('i', 'jk', '<Esc>')
 
 vim.keymap.set('n', '<Esc>', ':noh<CR>')
