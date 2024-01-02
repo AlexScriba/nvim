@@ -27,4 +27,6 @@ vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', {silent=true})
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', {silent=true})
 vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', {silent=true})
 
+-- Window splits
 vim.keymap.set('n', '<leader>h', ':vsplit<CR>', {silent=true})
+vim.keymap.set('n', '<leader>v', ':split<CR>', {silent=true})
