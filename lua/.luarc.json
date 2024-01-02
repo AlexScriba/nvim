@@ -1,5 +1,6 @@
 {
     "diagnostics.globals": [
-        "vim"
+        "vim",
+        "open_diagnostic_if_no_float"
     ]
 }
