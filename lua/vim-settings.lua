@@ -4,12 +4,11 @@ vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set cursorline")
 vim.cmd("set scrolloff=8")
+vim.cmd("set clipboard=unnamed")
 
 vim.cmd("set rnu")
 vim.cmd("set number")
 vim.cmd("set nowrap")
-
-vim.g.mapleader = " "
 
 vim.keymap.set('i', 'jk', '<Esc>')
 
@@ -30,3 +29,6 @@ vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', {silent=true})
 -- Window splits
 vim.keymap.set('n', '<leader>h', ':vsplit<CR>', {silent=true})
 vim.keymap.set('n', '<leader>v', ':split<CR>', {silent=true})
+
+-- Exit terminal mode
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
