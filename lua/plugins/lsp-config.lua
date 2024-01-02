@@ -11,7 +11,8 @@ return {
             require('mason-lspconfig').setup({
                 ensure_installed = {
                     "lua_ls",
-                    "tsserver"
+                    "tsserver",
+                    "rust_analyzer",
                 }
             })
         end
@@ -24,6 +25,7 @@ return {
             local lspconfig = require('lspconfig')
             lspconfig.lua_ls.setup({ capabilities = capabilities })
             lspconfig.tsserver.setup({ capabilities = capabilities })
+            lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover)
             vim.keymap.set('n', 'gl', vim.diagnostic.open_float)
