@@ -14,23 +14,23 @@ vim.g.mapleader = ' '
 
 vim.keymap.set('i', 'jk', '<Esc>')
 
-vim.keymap.set('n', '<Esc>', ':noh<CR>')
-vim.keymap.set('n', '<C-s>', ':w<CR>')
-vim.keymap.set('n', '<leader>x', ':q<CR>')
+vim.keymap.set('n', '<Esc>', ':noh<CR>', { silent = true })
+vim.keymap.set('n', '<C-s>', ':w<CR>', { silent = true })
+vim.keymap.set('n', '<leader>x', ':q<CR>', { silent = true })
 
 -- Move lines up and down
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- Jump between split panes
-vim.keymap.set('n', '<C-h>', ':wincmd h<CR>', {silent=true})
-vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', {silent=true})
-vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', {silent=true})
-vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', {silent=true})
+vim.keymap.set('n', '<C-h>', ':wincmd h<CR>', { silent = true })
+vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', { silent = true })
+vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', { silent = true })
+vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', { silent = true })
 
 -- Window splits
-vim.keymap.set('n', '<leader>h', ':vsplit<CR>', {silent=true})
-vim.keymap.set('n', '<leader>v', ':split<CR>', {silent=true})
+vim.keymap.set('n', '<leader>h', ':vsplit<CR>', { silent = true })
+vim.keymap.set('n', '<leader>v', ':split<CR>', { silent = true })
 
 -- Exit terminal mode
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
