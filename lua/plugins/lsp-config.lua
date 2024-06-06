@@ -26,6 +26,12 @@ return {
             lspconfig.lua_ls.setup({ capabilities = capabilities })
             lspconfig.tsserver.setup({ capabilities = capabilities })
             lspconfig.rust_analyzer.setup({ capabilities = capabilities })
+            lspconfig.ocamllsp.setup({
+                capabilities = capabilities,
+                on_attach = function()
+                    print("Hello World")
+                end
+            })
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover)
             vim.keymap.set('n', 'gl', vim.diagnostic.open_float)
